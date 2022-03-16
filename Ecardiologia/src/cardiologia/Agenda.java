@@ -11,9 +11,9 @@ package cardiologia;
  */
 public class Agenda {
     
-    public Personas  getPersona(boolean agendcita){
+    public Personas getPersona(boolean agendcita){
     if(agendcita == true){
-        return new MedicosAbstracto();
+        return new MedicosAbstracto(12365,"Johan","Ortiz","tarde");
       
         }
         System.out.println("nO LO TOMA");

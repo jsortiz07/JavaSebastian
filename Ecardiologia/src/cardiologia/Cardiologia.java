@@ -26,8 +26,9 @@ public class Cardiologia {
         
         
         Personas cita1 =new Agenda().getPersona(agendcita);
-
+        System.out.println(cita1.toString());
         cita1.informacionPer();
+        System.out.println(cita1.toString());
       /* Personas cita = new MedicosAbstracto();
         cita.informacionPer();
         

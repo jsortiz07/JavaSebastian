@@ -11,30 +11,46 @@ package cardiologia;
  */
 public  class MedicosAbstracto extends Personas {
 
-       private int identificacion;
+  /*     private int identificacion;
     private String nombre;
-    private String Apellido;
+    private String apellido;
     private String horario;
-    private Personas creador;
+    private Personas creador;*/
 
-    public MedicosAbstracto() {
+    public MedicosAbstracto(int documento , String nombre, String apellido, String horario) {
+       // super(identificacion , nombre , apellido, horario);
+        
+        super(documento,nombre,apellido,horario);
+        
+        
+     //   informacionPer(documento, nombre, apellido, horario);
+        
     }
     
     
     
 
 
-
-    @Override
+@Override
     public void informacionPer() {
-     this.identificacion =1225566;
+     this.setIdentificacion(1526566); 
+     this.nombre ="Johan";
+     this.apellido ="ortiz";
+     this.setHorario("Mañana"); 
+             
+    /* this.identificacion =1225566;
       this.creador.setIdentificacion(12122255);
         this.creador.setApellido("Lopez");
         this.creador.setHorario("Mañana");
        
-        System.out.println("Informacioon doctor");
+        System.out.println("Informacioon doctor");*/
     }
+    
+    public String toString(){
+        return String.format("El paciente",this.nombre, this.apellido,"Con cedula",this.identificacion,"Horario",this.horario);
+                }
 
+ 
 
     
     

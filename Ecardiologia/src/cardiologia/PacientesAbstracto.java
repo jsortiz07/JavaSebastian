@@ -11,12 +11,15 @@ package cardiologia;
  */
 public class PacientesAbstracto extends Personas {
 
-       private int identificacion;
+  /*     private int identificacion;
     private String nombre;
     private String Apellido;
-    private String horacita;
+    private String horacita;*/
     
-    public PacientesAbstracto() {
+    public PacientesAbstracto(int documento , String nombre, String apellido, String horario) {
+        
+                super(documento,nombre,apellido,horario);
+
     }
 
        
@@ -24,11 +27,11 @@ public class PacientesAbstracto extends Personas {
 
     @Override
     public void informacionPer() {
- identificacion =555555;
-        nombre ="Johan";
-        Apellido = "Ortiz";
-        horacita ="13:40";
-        System.out.println("si lo toma");
+   this.identificacion =22325;
+     this.nombre ="Diego";
+     this.apellido ="ortiz";
+     this.horario="23/03/2022";
     }
+    
     
 }

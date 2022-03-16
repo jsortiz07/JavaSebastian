@@ -10,12 +10,18 @@ package cardiologia;
  * @author nitro
  */
 public abstract class Personas {
-    private int identificacion;
-    private String nombre;
-    private String Apellido;
-    private String horario; 
+    int identificacion;
+     String nombre;
+     String apellido;
+     String horario; 
 
-    public Personas() {
+    public Personas(int documento , String nombre, String apellido, String horario) {
+        identificacion =documento;
+        nombre =nombre;
+        apellido =apellido;
+        horario =horario;
+        
+        
     }
 
     
@@ -37,11 +43,11 @@ public abstract class Personas {
     }
 
     public String getApellido() {
-        return Apellido;
+        return apellido;
     }
 
     public void setApellido(String Apellido) {
-        this.Apellido = Apellido;
+        this.apellido = Apellido;
     }
 
     public String getHorario() {
@@ -52,7 +58,10 @@ public abstract class Personas {
         this.horario = horario;
     }
     
-        public abstract void informacionPer();
+     public abstract void informacionPer();
 }
+    
+     
+
     
 
